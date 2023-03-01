@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>pl.patrykjava</groupId>
-	<artifactId>customer-list-app</artifactId>
+	<artifactId>customers-list-app</artifactId>
 	<version>1.0</version>
 	<packaging>war</packaging>
 
-	<name>customer-list-app</name>
+	<name>customers-list-app</name>
 
 	<properties>
 		<springframework.version>5.0.2.RELEASE</springframework.version>
@@ -59,7 +59,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>customer-list-app</finalName>
+		<finalName>customers-list-app</finalName>
 		<pluginManagement>
 			<plugins>
 				<plugin>
