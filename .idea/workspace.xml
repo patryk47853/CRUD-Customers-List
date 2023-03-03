@@ -2,19 +2,21 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="my-basic-crud-app:war exploded" />
+      <artifact name="spring-web-customer-tracker-all-java-config:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96a2284a-a7f9-42a9-8ffc-1af02bbb5855" name="Changes" comment="Prepare basic project files">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/patrykjava/config/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/patrykjava/config/AppServletInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/patrykjava/controller/AppController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/home.jsp" afterDir="false" />
+    <list default="true" id="96a2284a-a7f9-42a9-8ffc-1af02bbb5855" name="Changes" comment="Prepare basic project files - little changes">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/customers-list-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/patrykjava/config/AppConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/patrykjava/config/AppServletInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/home.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -61,45 +63,42 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/patrykmaliszewski/Documents/my-basic-crud-app/src/main/java/pl/patrykjava/config",
+    "last_opened_file_path": "/Users/patrykmaliszewski/Documents/my-basic-crud-app/src/main/webapp/WEB-INF",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "spring.configuration.checksum": "fe8ef2b1a7a20d2ce0e79e6af01c9a00",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
       <recent name="$PROJECT_DIR$/src/main/java/pl/patrykjava/config" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/view" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pl.patrykjava.entity" />
       <recent name="pl.patrykjava.controller" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="TomeeConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment />
-      <server-settings />
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Tomcat 9.0.71" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.71" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="customer-list-app:war exploded">
+        <artifact name="customers-list-app:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/customer_list_app_war_exploded" />
+            <option name="CONTEXT_PATH" value="" />
           </settings>
         </artifact>
       </deployment>
@@ -178,6 +177,7 @@
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="customer-list-app:war exploded" />
+          <artifact name="customers-list-app:war exploded" />
         </option>
       </method>
     </configuration>
@@ -190,7 +190,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1677693914888</updated>
-      <workItem from="1677693915989" duration="1730000" />
+      <workItem from="1677693915989" duration="2462000" />
+      <workItem from="1677772466468" duration="1936000" />
+      <workItem from="1677858605490" duration="4574000" />
     </task>
     <task id="LOCAL-00001" summary="Prepare basic project files">
       <created>1677695415920</created>
@@ -199,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677695415920</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Prepare basic project files - little changes">
+      <created>1677695818327</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677695818327</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,6 +216,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Prepare basic project files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Prepare basic project files" />
+    <MESSAGE value="Prepare basic project files - little changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prepare basic project files - little changes" />
   </component>
 </project>

@@ -4,6 +4,6 @@
     <title>Work in progress!</title>
 </head>
 <body>
-Work in progress!
+Work in progress! :)
 </body>
 </html>
