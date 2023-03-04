@@ -9,16 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96a2284a-a7f9-42a9-8ffc-1af02bbb5855" name="Changes" comment="Change project configuration strategy - use XML">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/patrykjava/dao/CustomerDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/patrykjava/dao/CustomerDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/patrykjava/entity/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
+    <list default="true" id="96a2284a-a7f9-42a9-8ffc-1af02bbb5855" name="Changes" comment="Group SQL files">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customers.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/patrykjava/controller/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/patrykjava/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/customers.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create-user.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-customers.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql_scripts/create-user-patryk47853.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql_scripts/my-customers.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/customers-list-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/customers-list-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/customers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/customers.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +65,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/patrykmaliszewski/Documents/my-basic-crud-app/src/main/webapp/WEB-INF/view",
+    "last_opened_file_path": "/Users/patrykmaliszewski/Documents/my-basic-crud-app/src/main/webapp/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -80,11 +79,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/view" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
       <recent name="$PROJECT_DIR$/src/main/java/pl/patrykjava/config" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src/main/webapp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp" />
@@ -198,6 +197,7 @@
       <workItem from="1677772466468" duration="1936000" />
       <workItem from="1677858605490" duration="4721000" />
       <workItem from="1677867780672" duration="2469000" />
+      <workItem from="1677930724826" duration="1407000" />
     </task>
     <task id="LOCAL-00001" summary="Prepare basic project files">
       <created>1677695415920</created>
@@ -220,7 +220,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677863433268</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add CustomerDAO implementation -&gt; print basic table with customers data">
+      <created>1677930879121</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677930879121</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Group SQL files">
+      <created>1677930910004</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677930910004</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +244,8 @@
     <MESSAGE value="Prepare basic project files" />
     <MESSAGE value="Prepare basic project files - little changes" />
     <MESSAGE value="Change project configuration strategy - use XML" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change project configuration strategy - use XML" />
+    <MESSAGE value="Add CustomerDAO implementation -&gt; print basic table with customers data" />
+    <MESSAGE value="Group SQL files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Group SQL files" />
   </component>
 </project>

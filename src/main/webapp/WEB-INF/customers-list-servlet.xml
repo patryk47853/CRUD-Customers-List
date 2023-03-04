@@ -64,6 +64,9 @@
     <!-- Enable configuration of transactional behavior based on annotations -->
 	<tx:annotation-driven transaction-manager="myTransactionManager" />
 
+	<!-- Support for reading WEB resources-->
+	<mvc:resources location="/resources/" mapping="/resources/**"></mvc:resources>
+
 </beans>
 
 

@@ -3,12 +3,18 @@
 <html>
 <head>
     <title>Customers</title>
+
+    <link type="text/css"
+          rel="stylesheet"
+          href="${pageContext.request.contextPath}/resources/css/style.css"
+    />
+
 </head>
 <body>
 
 <div id="wrapper">
     <div id="header">
-        <h2>My Customers List</h2>
+        <h2>Customers</h2>
     </div>
 </div>
 
