@@ -2,21 +2,23 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="spring-web-customer-tracker-all-java-config:war exploded" />
+      <artifact name="customers-list-app:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96a2284a-a7f9-42a9-8ffc-1af02bbb5855" name="Changes" comment="Prepare basic project files - little changes">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/customers-list-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+    <list default="true" id="96a2284a-a7f9-42a9-8ffc-1af02bbb5855" name="Changes" comment="Change project configuration strategy - use XML">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/patrykjava/dao/CustomerDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/patrykjava/dao/CustomerDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/patrykjava/entity/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customers.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/patrykjava/config/AppConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/patrykjava/config/AppServletInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/patrykjava/controller/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/patrykjava/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/customers.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +29,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -63,7 +66,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/patrykmaliszewski/Documents/my-basic-crud-app/src/main/webapp/WEB-INF",
+    "last_opened_file_path": "/Users/patrykmaliszewski/Documents/my-basic-crud-app/src/main/webapp/WEB-INF/view",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -77,13 +80,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/view" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
       <recent name="$PROJECT_DIR$/src/main/java/pl/patrykjava/config" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/webapp" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/view" />
     </key>
@@ -192,7 +196,8 @@
       <updated>1677693914888</updated>
       <workItem from="1677693915989" duration="2462000" />
       <workItem from="1677772466468" duration="1936000" />
-      <workItem from="1677858605490" duration="4574000" />
+      <workItem from="1677858605490" duration="4721000" />
+      <workItem from="1677867780672" duration="2469000" />
     </task>
     <task id="LOCAL-00001" summary="Prepare basic project files">
       <created>1677695415920</created>
@@ -208,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677695818327</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Change project configuration strategy - use XML">
+      <created>1677863433268</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677863433268</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +229,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Prepare basic project files" />
     <MESSAGE value="Prepare basic project files - little changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Prepare basic project files - little changes" />
+    <MESSAGE value="Change project configuration strategy - use XML" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change project configuration strategy - use XML" />
   </component>
 </project>

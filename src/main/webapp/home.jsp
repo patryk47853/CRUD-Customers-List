@@ -1,9 +1,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<% response.sendRedirect("/home/list"); %>
 <html>
 <head>
-    <title>Work in progress!</title>
+    <title>Home</title>
 </head>
 <body>
-Work in progress! :)
+
 </body>
 </html>
