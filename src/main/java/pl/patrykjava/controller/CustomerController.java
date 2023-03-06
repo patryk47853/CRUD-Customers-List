@@ -5,8 +5,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import pl.patrykjava.dao.CustomerDAO;
 import pl.patrykjava.entity.Customer;
+import pl.patrykjava.service.CustomerService;
 
 import java.util.List;
 
@@ -15,12 +17,22 @@ import java.util.List;
 public class CustomerController {
 
     @Autowired
-    private CustomerDAO customerDAO;
+    private CustomerService customerService;
 
     @GetMapping("/list")
     public String customersList(Model theModel) {
 
-        List<Customer> myCustomers = customerDAO.getCustomers();
+        List<Customer> myCustomers = customerService.getCustomers();
+
+        theModel.addAttribute("customers", myCustomers);
+
+        return "customers";
+    }
+
+    @GetMapping("/search")
+    public String searchCustomer(@RequestParam("customerName") String customerName,
+                                 Model theModel) {
+        List<Customer> myCustomers = customerService.searchCustomers(customerName);
 
         theModel.addAttribute("customers", myCustomers);
 
