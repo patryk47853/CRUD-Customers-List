@@ -10,4 +10,6 @@ public interface CustomerService {
 
     List<Customer> searchCustomers(String customerName);
 
+    void saveCustomer(Customer theCustomer);
+
 }

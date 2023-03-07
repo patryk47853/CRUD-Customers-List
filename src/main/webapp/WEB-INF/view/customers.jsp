@@ -40,6 +40,11 @@
                 </tr>
             </c:forEach>
         </table>
+        <br>
+        <input type="button" value="Add customer"
+               onclick="window.location.href='addCustomer'; return false;"
+               class="add-button"
+               />
     </div>
 
 </div>
