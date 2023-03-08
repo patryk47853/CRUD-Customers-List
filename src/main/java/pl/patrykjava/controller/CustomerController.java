@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import pl.patrykjava.dao.CustomerDAO;
 import pl.patrykjava.entity.Customer;
 import pl.patrykjava.service.CustomerService;
 
@@ -51,6 +50,14 @@ public class CustomerController {
     public String saveCustomer(@ModelAttribute("customer") Customer theCustomer) {
 
         customerService.saveCustomer(theCustomer);
+
+        return "redirect:/home/list";
+    }
+
+    @GetMapping("/deleteCustomer")
+    public String deleteCustomer(@RequestParam("customerId") int customerId) {
+
+        customerService.deleteCustomer(customerId);
 
         return "redirect:/home/list";
     }
