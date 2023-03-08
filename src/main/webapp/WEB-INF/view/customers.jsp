@@ -30,13 +30,22 @@
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Email</th>
+                <th>Action</th>
             </tr>
 
             <c:forEach var="myCustomer" items="${customers}">
+
+                <c:url var="deleteLink" value="/home/delete">
+                    <c:param name="customerId" value="${myCustomer.id}"/>
+                </c:url>
                 <tr>
                     <td>${myCustomer.firstName}</td>
                     <td>${myCustomer.lastName}</td>
                     <td>${myCustomer.email}</td>
+                    <td><a href="${deleteLink}" onclick="return
+                            confirm('Are you sure you want to delete ${tempCustomer.firstName} from database?');"
+                    />Delete</a>
+                    </td>
                 </tr>
             </c:forEach>
         </table>
