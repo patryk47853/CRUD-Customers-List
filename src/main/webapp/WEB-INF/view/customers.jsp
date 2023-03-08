@@ -35,16 +35,16 @@
 
             <c:forEach var="myCustomer" items="${customers}">
 
-                <c:url var="deleteLink" value="/home/delete">
+                <c:url var="deleteLink" value="/home/deleteCustomer">
                     <c:param name="customerId" value="${myCustomer.id}"/>
                 </c:url>
                 <tr>
                     <td>${myCustomer.firstName}</td>
                     <td>${myCustomer.lastName}</td>
                     <td>${myCustomer.email}</td>
-                    <td><a href="${deleteLink}" onclick="return
-                            confirm('Are you sure you want to delete ${tempCustomer.firstName} from database?');"
-                    />Delete</a>
+                    <td> <a href="${deleteLink}"
+                       onclick="return confirm('Are you sure you want to delete ${myCustomer.firstName} from database?');"
+                    >Delete</a>
                     </td>
                 </tr>
             </c:forEach>
