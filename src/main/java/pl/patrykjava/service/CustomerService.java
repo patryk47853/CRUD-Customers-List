@@ -8,6 +8,8 @@ public interface CustomerService {
 
     List<Customer> getCustomers();
 
+    Customer getCustomer(int customerId);
+
     List<Customer> searchCustomers(String customerName);
 
     void saveCustomer(Customer theCustomer);
