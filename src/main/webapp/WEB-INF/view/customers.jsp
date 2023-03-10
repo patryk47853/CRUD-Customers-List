@@ -13,6 +13,20 @@
 </head>
 <body>
 
+<%@ page import="pl.patrykjava.TableToSort" %>
+
+<c:url var="sortByFirstName" value="/home/list" >
+    <c:param name="sort" value="<%=Integer.toString(TableToSort.FIRST_NAME) %>" />
+</c:url>
+
+<c:url var="sortByLastName" value="/home/list" >
+    <c:param name="sort" value="<%=Integer.toString(TableToSort.LAST_NAME)%>" />
+</c:url>
+
+<c:url var="sortByEmail" value="/home/list" >
+    <c:param name="sort" value="<%=Integer.toString(TableToSort.EMAIL)%>" />
+</c:url>
+
 <div id="wrapper">
     <div id="header">
         <h2>Customers</h2>
@@ -27,9 +41,9 @@
         </form:form>
         <table>
             <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Email</th>
+                <th><a href="${sortByFirstName}">First Name</a></th>
+                <th><a href="${sortByLastName}">Last Name</a></th>
+                <th><a href="${sortByEmail}">Email</a></th>
                 <th>Action</th>
             </tr>
 
