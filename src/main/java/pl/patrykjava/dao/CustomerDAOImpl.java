@@ -7,6 +7,7 @@ import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
+import pl.patrykjava.TableToSort;
 import pl.patrykjava.entity.Customer;
 
 import java.util.List;
@@ -19,11 +20,29 @@ public class CustomerDAOImpl implements CustomerDAO {
     private SessionFactory sessionFactory;
 
     @Override
-    public List<Customer> getCustomers() {
+    public List<Customer> getCustomers(int sortField) {
 
         Session currentSession = sessionFactory.getCurrentSession();
 
-        Query myQuery = currentSession.createQuery("from Customer", Customer.class);
+        String fieldToSort = null;
+
+        switch (sortField) {
+            case TableToSort.FIRST_NAME:
+                fieldToSort = "firstName";
+                break;
+            case TableToSort.LAST_NAME:
+                fieldToSort = "lastName";
+                break;
+            case TableToSort.EMAIL:
+                fieldToSort = "email";
+                break;
+            default:
+                // as default, just sort by last name
+                fieldToSort = "lastName";
+        }
+
+        String sortQuery = "from Customer order by " + fieldToSort;
+        Query myQuery = currentSession.createQuery(sortQuery, Customer.class);
 
         List<Customer> myCustomers = myQuery.getResultList();
 
