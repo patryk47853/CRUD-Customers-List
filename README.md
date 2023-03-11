@@ -1,6 +1,6 @@
 # Customer Data Management System
 
-<p>This is a simple CRUD Spring MVC application, created mainly for educational purposes. It's based on Spring MVC, Hibernate and MySQL - using XML configuration.</p>
+<p>This is a simple CRUD Spring MVC application, created mainly for educational purposes. It's based on Spring MVC, Hibernate and MySQL - using Maven and XML configuration.</p>
 
 ### Functionality
 - Connect via SQL database
