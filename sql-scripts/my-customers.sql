@@ -40,7 +40,7 @@ INSERT INTO `customer` VALUES
 	(2,'Krzysztof','Lewandowski','krzy.lew@gmail.com'),
 	(3,'Anna','Lasocka','anna.las@gmail.com'),
 	(4,'Adrianna','Maj','ada.maj@gmail.com'),
-	(5,'Maksymilan','Nowak','maks.now@gmail.com');
+	(5,'Maksymilian','Nowak','maks.now@gmail.com');
 
 /*!40000 ALTER TABLE `customer` ENABLE KEYS */;
 UNLOCK TABLES;
