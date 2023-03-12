@@ -1,6 +1,6 @@
 package pl.patrykjava;
 
-public class TableToSort {
+public class SortingValues {
 
     public static final int FIRST_NAME = 1;
     public static final int LAST_NAME = 2;

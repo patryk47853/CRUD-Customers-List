@@ -7,7 +7,7 @@ import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
-import pl.patrykjava.TableToSort;
+import pl.patrykjava.SortingValues;
 import pl.patrykjava.entity.Customer;
 
 import java.util.List;
@@ -27,13 +27,13 @@ public class CustomerDAOImpl implements CustomerDAO {
         String fieldToSort = null;
 
         switch (sortField) {
-            case TableToSort.FIRST_NAME:
+            case SortingValues.FIRST_NAME:
                 fieldToSort = "firstName";
                 break;
-            case TableToSort.LAST_NAME:
+            case SortingValues.LAST_NAME:
                 fieldToSort = "lastName";
                 break;
-            case TableToSort.EMAIL:
+            case SortingValues.EMAIL:
                 fieldToSort = "email";
                 break;
             default:

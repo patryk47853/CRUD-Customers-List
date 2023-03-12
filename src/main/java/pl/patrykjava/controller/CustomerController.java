@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import pl.patrykjava.TableToSort;
+import pl.patrykjava.SortingValues;
 import pl.patrykjava.entity.Customer;
 import pl.patrykjava.service.CustomerService;
 
@@ -27,7 +27,7 @@ public class CustomerController {
             int sortField = Integer.parseInt(sort);
             myCustomers = customerService.getCustomers(sortField);
         } else {
-            myCustomers = customerService.getCustomers(TableToSort.LAST_NAME);
+            myCustomers = customerService.getCustomers(SortingValues.LAST_NAME);
         }
 
         theModel.addAttribute("customers", myCustomers);

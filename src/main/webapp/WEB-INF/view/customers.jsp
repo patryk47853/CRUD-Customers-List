@@ -13,18 +13,18 @@
 </head>
 <body>
 
-<%@ page import="pl.patrykjava.TableToSort" %>
+<%@ page import="pl.patrykjava.SortingValues" %>
 
 <c:url var="sortByFirstName" value="/home/list" >
-    <c:param name="sort" value="<%=Integer.toString(TableToSort.FIRST_NAME) %>" />
+    <c:param name="sort" value="<%=Integer.toString(SortingValues.FIRST_NAME) %>" />
 </c:url>
 
 <c:url var="sortByLastName" value="/home/list" >
-    <c:param name="sort" value="<%=Integer.toString(TableToSort.LAST_NAME)%>" />
+    <c:param name="sort" value="<%=Integer.toString(SortingValues.LAST_NAME)%>" />
 </c:url>
 
 <c:url var="sortByEmail" value="/home/list" >
-    <c:param name="sort" value="<%=Integer.toString(TableToSort.EMAIL)%>" />
+    <c:param name="sort" value="<%=Integer.toString(SortingValues.EMAIL)%>" />
 </c:url>
 
 <div id="wrapper">
