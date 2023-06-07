@@ -22,7 +22,7 @@
 #### Updating Customer
 <img src="screenshots/update-customer.png" alt="update-customer" align="center">
 
-#### Searching (for example: contains 'now')
+#### Searching (for example: contains 'owa')
 <img src="screenshots/search.png" alt="search" align="center">
 
 #### Sorting (for example: by first name)
